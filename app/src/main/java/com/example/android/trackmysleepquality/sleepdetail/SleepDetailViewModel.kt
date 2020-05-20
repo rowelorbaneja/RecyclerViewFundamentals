@@ -53,7 +53,6 @@ class SleepDetailViewModel(
 
     fun getNight() = night
 
-
     init {
         night=database.getNightWithId(sleepNightKey)
     }
@@ -82,7 +81,6 @@ class SleepDetailViewModel(
         viewModelJob.cancel()
     }
 
-
     /**
      * Call this immediately after navigating to [SleepTrackerFragment]
      */
@@ -93,5 +91,4 @@ class SleepDetailViewModel(
     fun onClose() {
         _navigateToSleepTracker.value = true
     }
-
 }

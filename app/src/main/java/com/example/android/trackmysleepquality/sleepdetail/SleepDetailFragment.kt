@@ -79,6 +79,4 @@ class SleepDetailFragment : Fragment() {
 
         return binding.root
     }
-
-
 }
